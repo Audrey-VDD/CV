@@ -1,0 +1,350 @@
+:root {
+    --black-color: #1B1B1E;
+    --charcol-color: #373F51;
+    --green-color: #004B23;
+    --greenLight-color: #91d7b1;
+    --lighter-color: #008f6e;
+}
+*{
+    margin: 1%;
+}
+header {
+    border: 5px solid var(--green-color);
+    top: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#headerOne {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#infosHeader {
+    display: flex;
+    align-items: center;
+}
+
+#audrey {
+    border-radius: 15px;
+    height: 10vh;
+}
+
+nav {
+    font-style: italic;
+    text-shadow: var(--green-color) 1px 0 10px;
+}
+
+#ulNavBar {
+    display: flex;
+    margin-right: 1%;
+}
+.navBar {
+    list-style: none; 
+}
+
+.navBar:hover{
+    text-decoration: underline;
+}
+:any-link {
+    text-decoration: none;
+    color: #1B1B1E;
+}
+a:visited {
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 1%;
+}
+#dev{
+    margin-left: 40vw;
+    font-style: italic;
+    text-shadow: var(--green-color) 1px 0 10px;
+}
+
+#leftPart {
+    background-color: var(--green-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 25vw;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: -1.5vh -1vw var(--lighter-color);
+}
+
+#coord {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vh;
+}
+
+.coordonnees{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.coordName {
+    width: 15vw;
+}
+
+.coordValue{
+    text-align: right;
+}
+
+#mail > a {
+    color: white !important;
+}
+
+#mail > a:hover {
+    text-decoration: underline;
+}
+.titleLeftPart{
+    width: 24vw;
+}
+
+.titleLeftPart > h4 {
+    font-style: italic;
+    border-bottom: #abfdd1 solid;
+    margin-bottom: 10%;
+}
+.pictureHobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-top: 3vh;
+
+}
+
+#jeuxVideo {
+    width: 20%;
+}
+
+#animaux {
+    width: 20%;   
+}
+
+
+#musique {
+    width: 20%;
+}
+
+.range {
+    border: 2px solid var(--lighter-color);
+    border-radius: 25px;
+    width: 90%;
+}
+
+.cent{
+    background-color: var(--lighter-color);
+    color: #1B1B1E;
+    width: 98%;
+    border-radius: 25px;
+    text-align: center;
+    animation: animateSkillsToCent 2s;
+}
+
+.quarante{
+    background-color: var(--lighter-color);
+    color: #1B1B1E;
+    width: 40%;
+    border-radius: 25px;
+    text-align: center;
+    animation:animateSkillsToFourty 2s  ;
+}
+
+@keyframes animateSkillsToCent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 98% ;
+    }
+}
+@keyframes animateSkillsToFourty {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40% ;
+    }
+}
+.flag {
+    width: 13%;
+}
+#socialPart {
+    display: flex;
+    align-items: baseline; 
+}
+#github {
+    width: 45%;
+}
+#linkedin{
+    width: 65%;
+}
+#insta{
+    width: 40%;
+    margin-left: 23%;
+}
+
+#rightPart {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    gap: 2vh;
+    align-items: flex-start;
+}
+
+#rightPart > div {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#rightPart > div > h2 {
+    text-decoration: underline;
+    text-shadow: var(--moonstone-color) 1px 0 10px;
+    text-align: center;
+    margin-bottom: 5%;
+    color: var(--green-color);
+}
+#expPro>h2 {
+    text-decoration: underline;
+    text-shadow: var(--moonstone-color) 1px 0 10px;
+    text-align: center;
+    margin-left: 15%;
+    color: var(--green-color);
+}
+
+.header-formation, .content-formation{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+    width: 45vw;
+}
+.formation{
+    border-bottom: 1px solid var(--green-color);
+}
+
+#expPro > h3 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-weight: 900;
+}
+
+#expPro> h3, h4 {
+    text-align: center !important;
+}
+
+#expPro {
+    display: flex;
+    flex-direction: column;
+}
+
+#competences {
+    margin-bottom: 8%;
+}
+#competences>h2 {
+    margin-right: 20vw !important;
+}
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+#logoCss {
+    width: 10%;
+}
+#logoHtml {
+    width: 10%;
+}
+#logoJava {
+    width: 10%;
+}
+#logoReact{
+    width: 10%;
+}
+#logoPhp{
+    width: 10%;
+}
+#logoMySql{
+    width: 10%;
+}
+
+.listMission>li{
+    list-style: "\2794 ";
+}
+
+
+
+@media (max-width : 600px) {
+    main {
+        max-width: 100vw;
+    }
+    #leftPart {
+        max-width: 25vw
+    }
+    #mail {
+        max-width: 60%;
+    }
+    #insta {
+        width: 60%;
+    }
+    #linkedin {
+        width: 60%;
+    }
+    .progressBar {
+        max-width: 100%;
+    }
+    #audrey {
+        max-width: 30%;
+    }
+    nav {
+        margin-left: 0;
+    }
+    ul {
+        gap: 3%;
+        justify-content: flex-start;
+    }
+    nav > ul > li {
+        font-style: oblique;
+        font-size: 60%;
+    }
+    :any-link{
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+@media (min-width : 600px) and (max-width : 768px){
+    .progressBar{
+        max-width: 100%;
+    }
+    #leftPart {
+        max-width: 25vw;
+    }
+    #audrey {
+        max-width: 20%;
+    }
+    nav{
+        margin-left: 0;
+    }
+    :any-link{
+        color: #1B1B1E;
+    }
+}
